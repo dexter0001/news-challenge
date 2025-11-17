@@ -26,7 +26,7 @@ This application uses Angular Material components to create an intuitive and vis
 
 This component-based approach provides a modern, user-friendly experience optimized for browsing news content.
 
-# TECH STACK
+# Tech Stack
 Framework - Angular 20
 UI Library - Angular Material
 Language - TypeScript 5.0+
