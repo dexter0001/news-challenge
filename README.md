@@ -19,6 +19,13 @@ Direct Links - Quick access to original articles
 
 Real-time Updates - Live data from HackerNews Firebase API
 
+# Approach
+This application uses Angular Material components to create an intuitive and visually appealing news interface:
+- **Material Tabs**: Enables seamless navigation between "Top Stories" and "New Stories" sections
+- **Material Cards**: Presents each story in a clean, structured format that enhances readability
+
+This component-based approach provides a modern, user-friendly experience optimized for browsing news content.
+
 # TECH STACK
 Framework - Angular 20
 UI Library - Angular Material
