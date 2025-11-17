@@ -1,0 +1,27 @@
+
+mat-card {
+    margin: 1rem;
+    background-color: #F6F6EF;
+}
+
+.content-section {
+    span {
+        padding-left: 8px;
+    }
+}
+
+.pipe {
+    display: inline-flex;
+    align-items: center;
+}
+
+.pipe::after {
+    content: ' | ';
+    margin-left: 4px;
+}
+
+mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}

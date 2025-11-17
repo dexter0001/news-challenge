@@ -1,0 +1,40 @@
+<mat-card role="article" [attr.aria-label]="'Story: ' + story.title">
+    <mat-card-content>
+        <div>
+            <!-- Header -->
+            <h2>
+                @if (story.url) {
+                <a [href]="story.url" 
+                    target="_blank" rel="noopener noreferrer" 
+                    [attr.aria-label]="'Read full story:' + story.title">
+                    <span>{{ story.title }}</span>
+                </a>
+                } @else {
+                <span>{{ story.title }}</span>
+                }
+            </h2>
+
+            <!-- Content section -->
+            <div class="content-section" role="list" aria-label="Story details">
+                <span class="pipe" role="listitem">
+                    <mat-icon aria-hidden="true">trending_up</mat-icon>
+                    <span>{{ story.score }} points</span>
+                </span>
+                <span class="pipe" role="listitem">
+                    <mat-icon aria-hidden="true">person</mat-icon>
+                    <span>by {{ story.by }}</span>
+                </span>
+                <span class="pipe" role="listitem">
+                    <mat-icon aria-hidden="true">schedule</mat-icon>
+                    <span>{{ formatTime(story.time) }}</span>
+                </span>
+                @if (story.descendants) {
+                <span class="pipe" role="listitem">
+                    <mat-icon aria-hidden="true">comment</mat-icon>
+                    <span>{{ story.descendants }} comments</span>
+                </span>
+                }
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

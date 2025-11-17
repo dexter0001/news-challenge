@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #FF6600;
+    line-height: 2;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #dddd;
+}
+
+.center {
+    text-align: center;
+}
